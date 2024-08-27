@@ -1,7 +1,5 @@
-using NUnit.Framework.Constraints;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class DatatypePractice : MonoBehaviour
@@ -48,6 +46,9 @@ public class DatatypePractice : MonoBehaviour
         num1 = num1 + 1;
         Debug.Log("The end number for num1 afer adding 1 is: " + num1);
         Debug.Log(monsters);
+        
+
+
     }
 
     // Update is called once per frame
