@@ -131,7 +131,6 @@ GameObject:
   - component: {fileID: 664763799}
   - component: {fileID: 664763798}
   - component: {fileID: 664763797}
-  - component: {fileID: 664763801}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -229,22 +228,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &664763801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 664763795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da44086b47e72c4885fdff470777ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  odysseus: 586189890
-  penelope: 89476847
-  circe: 826045614
-  agamemnon: 953505428
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +238,6 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
-  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -339,30 +321,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 23.596, y: -20.531, z: 15.333}
---- !u!114 &705507996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d9bc8ddf94fbdd4aa5fffcbe5192234, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  num1: 0
-  num2: 0
-  num3: 0
-  num4: 0
-  num5: 0
-  num6: 3.14
-  num7: 3.1415927410125732
-  isProgrammingHard: 1
-  charizard: 97
-  blastoise: 98
-  venasaur: 99
-  monsters: Pokemon are cool, but so is Undertale and I just wanted to say that
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +426,8 @@ GameObject:
   - component: {fileID: 1658194598}
   - component: {fileID: 1658194597}
   - component: {fileID: 1658194601}
+  - component: {fileID: 1658194602}
+  - component: {fileID: 1658194603}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -579,6 +539,49 @@ MonoBehaviour:
   letter2: 111
   letter3: 109
   letter4: 101
+--- !u!114 &1658194602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658194596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da44086b47e72c4885fdff470777ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  odysseus: 586189
+  penelope: 89476
+  circe: 826045
+  agamemnon: 953505
+  chainchomp: 9363381
+  boo: 318797453
+  goomba: 986552102
+  koopa: 39718005
+  air: 19.72629
+  water: 90.35421
+  earth: 7.8995
+  fire: 5.18018
+  war: 6.7004795382689
+  plague: 8.130845594841
+  famine: 7.9069626829752
+  death: 2.5325641037225
+--- !u!114 &1658194603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658194596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d269bec901cab4986b938b06156bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rock: hey!
+  paper: ' it '
+  scissors: works!
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
