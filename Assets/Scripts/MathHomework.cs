@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MathHomework : MonoBehaviour
+public class Math : MonoBehaviour
 {
     public int odysseus = 586189;
     public int penelope = 89476;
