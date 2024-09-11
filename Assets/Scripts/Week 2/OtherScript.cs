@@ -9,7 +9,7 @@ public class OtherScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moodlighting = ("Directional Light");
+        
     }
 
     // Update is called once per frame
