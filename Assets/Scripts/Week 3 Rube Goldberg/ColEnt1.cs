@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OtherScript : MonoBehaviour
+public class ColEnt1 : MonoBehaviour
 {
-    public Light moodlighting;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -16,5 +14,13 @@ public class OtherScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnCollisionEnter(Collision otherObject)
+    {
+        if (otherObject.collider.gameObject.tag == "domino")
+        {
+            Debug.Log("Timber!");
+        }
     }
 }
