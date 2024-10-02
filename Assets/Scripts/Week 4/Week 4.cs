@@ -8,11 +8,16 @@ public class Week4 : MonoBehaviour
 
     public int currentLight = 0;
 
+    public AudioSource mettaton1;
+    public AudioSource mettaton2;
+    private bool hasPlayed = false;
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log(lights.Count);
+        mettaton1.Play();
+
     }
 
     // Update is called once per frame
@@ -21,6 +26,15 @@ public class Week4 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             ToggleCurrentLight();
+            
+            if (hasPlayed == false)
+            {
+              mettaton2.Play();
+              hasPlayed = true;
+            }
+            
+            
+
         }
 
         if (Input.GetKeyDown(KeyCode.W))
@@ -42,11 +56,20 @@ public class Week4 : MonoBehaviour
         {
             ToggleLightColor();
         }
+
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            LightsOff();
+        }
+
+
+        
     }
 
     public void ToggleCurrentLight()
     {
         lights[currentLight].LightSwitch();
+        Debug.Log("Toggled this light");
     }
 
     public void IncreaseLightNumber()
@@ -80,21 +103,30 @@ public class Week4 : MonoBehaviour
 
     public void ToggleLightColor()
     {
-        for (int i = 0; i < lights.Count; i++)
+        if (currentLight % 2 == 1)
         {
-            if (i % 2 == 1)
-            {
-                lights[i].ColorSwitchOdd();
-                Debug.Log("Changed light color at index " + i);
-            }
+            lights[currentLight].ColorSwitchOdd();
 
-            else if (i % 2 == 0)
-            {
-                lights[i].ColorSwitchEven();
-                Debug.Log("Changed light color at index " + i);
+        }
 
-            }
+        if (currentLight % 2 == 0)
+        {
+            lights[currentLight].ColorSwitchEven();
+
+          
         }
     }
 
+
+    public void LightsOff()
+    {
+        foreach (AllLights allLight in lights)
+        {
+            if (allLight.lightSource.enabled == true)
+            {
+                allLight.lightSource.enabled = false;
+                Debug.Log("Nighty-night!");
+            }
+        }
+    }
 }
